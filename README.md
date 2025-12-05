@@ -121,3 +121,14 @@ Vous devez :
 
 1. Revenir à l'état précédent avec `git reset` ou `git revert`.
 2. Expliquer la différence entre les deux commandes.
+   REPONSE: git revert creer un nouveaux comit qui annule les changements d’un commit précédent
+L’historique est conservé (on voit le commit d’origine et le commit de revert).
+C’est la méthode recommander sur une branche partagée comme main car on ne réécrit pas l’historique
+
+git reset déplace HEAD vers un commit antérieur et peut supprimer des commits de l’historique.
+
+git reset --mixed HEAD~1 : supprime le dernier commit mais garde les fichiers modifiés.
+
+git reset --hard HEAD~1 : supprime le dernier commit et les modifications dans les fichiers.
+
+Sur une branche déjà poussée, c’est risqué car ça réécrit l’historique que les autres utilisent.
