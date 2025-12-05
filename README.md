@@ -1,5 +1,5 @@
 ## Consignes
-Prenom : Elias Saire
+salut
 Vous travaillez en groupe sur un dépôt GitHub pour produire un site web en Golang.
 
 Le site affiche pour le moment une page vide. Deux fonctionnalités seront développées en parallèle, depuis la branche `dev` déjà existante (voir schéma de l’état initial du dépôt).
